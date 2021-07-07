@@ -1,9 +1,7 @@
 function truncateString(str, num) {
-  if (str.length > num) {
-    let regex = new RegExp (str + '...');
-    return str.replace(regex);
-  }
-  return str;
+let arr = str;
+let truncated = arr.slice(0, (num));
+console.log(truncated+'...');
 }
 
 truncateString("A-tisket a-tasket A green and yellow basket", 8);
